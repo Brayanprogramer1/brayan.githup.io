@@ -1,0 +1,161 @@
+<?php
+        session_start();
+
+        if(!isset($_SESSION['usuario'])){
+            echo'
+            <script>
+                alert("Por favor de iniciar sesion");
+                window.location = "../index.php";
+            </script>
+            ';
+           
+            session_destroy();
+            die();
+            
+        }
+        
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title> Inicio / Nanok mascotas</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <meta name="viewport" content="width=device-width, user escalable=no ,initial-scale=1.0, maximum-scale=1.0, 
+    minimum-scale=1.0">
+</head>
+<body>
+    
+    <!-- header menu -->
+    <header>
+        <div class="header-content">
+
+            <div class="logo">
+
+                <h1>Nanok<b>Mascotas</b></h1>
+            </div>
+            <div class="menu" id="show-menu">
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                        <li><a href="productos.html"><i>℗</i> Productos</a>
+                        <ul>
+                            <li><a href="accesoriosP.html">Accesorios para perros</a></li>
+                            <li><a href="accesorioG.html">Accesorios para gatos</a></li>
+                            <li><a href="comida.html">Comida para mascota</a></li>
+                            <li><a href="medicamento.html">Medicamento</a></li>
+                        </ul>
+                        </li>
+                        <li class="menu-selected"><a href="#" class="text-menu-selected"><i>✂</i> Ofertas</a></li>
+                        <li><a href="#"><i>☎</i>Carrito</a></li>
+                        <li><a href="perfil.php"><i>☑</i>Perfil</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+        <div id="icon-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </header>
+    
+    <!-- banner -->
+    <div class="container-all" id="move-content">
+    <div class="container-cover">
+        <div class="container-info-cover">
+            <h1>¡Tu mascota merece solo lo mejor!</h1>
+        
+            
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-img">
+            <img src="imagenes/accesorios_G/accesorio_G1.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+    
+
+        <div class="content-img">
+            <img src="imagenes/accesorios_P/accesorio_p2.2.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+
+        <div class="content-img">
+            <img src="imagenes/accesorios_P/correa_P.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+
+        <div class="content-img">
+            <img src="imagenes/comida-G/comida_G1.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-img">
+            <img src="imagenes/comida-P/comida_P1.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+
+        <div class="content-img">
+            <img src="imagenes/comida-G/comida_G2.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+
+        <div class="content-img">
+            <img src="imagenes/comida-P/comida_P2.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+
+        <div class="content-img">
+            <img src="imagenes/comida-G/comida_G3.png" class="img" alt="">
+            <label for=""></label><br>
+            <p>mochila para gato</p><br>
+            <input type="button" class="btn-galeriai" value="Ver mas"><br>
+        </div>
+    </div>
+
+
+    <div class="container-footer">
+
+        <footer>
+
+            <div class="logo-footer">
+                <img src="imagenes/nanok_logo1.png" alt="">
+            </div>
+
+            <div class="redes-footer">
+                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g icon-redes-footer"> </i></a>
+                <a href="#"><i class="fab fa-instagram icon-redes-footer"> </i></a>
+            </div>
+            <hr>
+            <h4>© Dream modelado</h4>
+        </footer>
+    </div>
+</div>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
